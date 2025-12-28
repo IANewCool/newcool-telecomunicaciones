@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Telecomunicaciones - NewCooltura Informada",
+  title: "Telecomunicaciones Chile - SUBTEL | NewCooltura Informada",
   description: "Oficinas SUBTEL, operadores, calculadora de costo por GB y reclamos",
+  keywords: ["telecomunicaciones", "SUBTEL", "operadores moviles", "internet Chile", "reclamos telecom"],
+  openGraph: {
+    title: "Telecomunicaciones Chile - NewCooltura Informada",
+    description: "SUBTEL, operadores y reclamos",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
